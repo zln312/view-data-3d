@@ -1,0 +1,12 @@
+.gitgnore
+node_modules
+dist
+.vscode/settings.json
+*.o
+.VSCodeCounter/*
+package-lock.json
+.idea/
+.sass-cache/
+*.sds
+.tmp
+.dat

@@ -1,0 +1,181 @@
+#index {
+  color: #d3d6dd;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+#index .bg {
+  padding: 0.2rem 0.2rem 0 0.2rem;
+  background-image: url("../assets/img/pageBg.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#index .host-body .title {
+  position: relative;
+  width: 6.25rem;
+  line-height: 0.6rem;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#index .host-body .title .title-text {
+  font-size: 0.3rem;
+}
+
+#index .host-body .title .title-bototm {
+  width: 6.25rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+}
+
+#index .host-body .btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0.4rem;
+  width: 30%;
+  right: 0.2rem;
+  z-index: 9999;
+}
+
+#index .host-body .btn-group img {
+  width: 0.5rem;
+  cursor: pointer;
+}
+
+#index .host-body .content-date {
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.2rem;
+}
+
+#index .host-body .content-date span {
+  margin-left: 10px;
+}
+
+#index .host-body .content-left-box, #index .host-body .content-right-box {
+  position: absolute;
+  top: 1rem;
+  width: 30vw;
+  text-align: center;
+  height: calc(100vh - 1rem - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#index .host-body .content-left-box .panel-contanier, #index .host-body .content-right-box .panel-contanier {
+  height: calc(33.3% - 0.5rem);
+}
+
+#index .host-body .content-left-box .panel-contanier .dv-border-box-10, #index .host-body .content-right-box .panel-contanier .dv-border-box-10 {
+  height: auto;
+}
+
+#index .host-body .content-left-box .panel-contanier .left-text-item, #index .host-body .content-right-box .panel-contanier .left-text-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+#index .host-body .content-left-box .content-title, #index .host-body .content-right-box .content-title {
+  font-size: 0.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#index .host-body .content-left-box .content-title .border-box-content, #index .host-body .content-right-box .content-title .border-box-content {
+  padding: 0.2rem;
+}
+
+#index .host-body .content-left-box {
+  left: 0.2rem;
+}
+
+#index .host-body .content-right-box1 {
+  width: 34vw;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  right: 20px;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#index .host-body .content-right-box1 .content-date {
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+}
+
+#index .host-body .content-right-box1 .content-date span {
+  margin-left: 10px;
+}
+
+#index .host-body .content-right-box1 .content-title {
+  height: 50px;
+  font-size: 0.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#index .host-body .content-right-box1 .content-title span {
+  line-height: 50px;
+  padding-left: 30px;
+}
+
+#index .host-body .content-right-box {
+  right: .2rem;
+}
+
+#index .host-body .bototm-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#index .host-body .bototm-btn .btn {
+  font-size: .4rem;
+  padding: 15px 30px;
+  background-color: darkblue;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#index .host-body .bototm-btn .btn:hover {
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+}
+
+#index .host-body .body-box {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#index .host-body .body-box .content-box {
+  display: grid;
+  grid-template-columns: 2fr 3fr 5fr 3fr 2fr;
+}
+
+#index .host-body .body-box .bototm-box {
+  margin-top: 0.125rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2636815",
+  "name": "transformer",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17534563",
+      "name": "超声波检测器",
+      "font_class": "229",
+      "unicode": "e7e5",
+      "unicode_decimal": 59365
+    }
+  ]
+}
