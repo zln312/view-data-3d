@@ -2,11 +2,11 @@
  * @Author: Zhao.Li.Nai
  * @Date: 2021-06-28 14:31:34
  * @LastEditors: Zhao.Li.Nai
- * @LastEditTime: 2021-06-28 15:22:28
+ * @LastEditTime: 2021-07-07 15:09:22
 -->
 <template>
   <div>
-    <Echart :options="options" id="line" height="100%" width="100%"></Echart>
+    <Echart :options="options" id="home_bar" height="100%" width="100%"></Echart>
   </div>
 </template>
 

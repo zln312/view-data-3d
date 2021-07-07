@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <dv-full-screen-container class="bg">
+    <div class="bg">
       <dv-loading v-if="loading">Loading...</dv-loading>
       <div v-else class="host-body">
         <div>
@@ -97,19 +97,10 @@
         </div>
 
         <div class="bototm-btn">
-          <btn-switch></btn-switch>
-          <el-button-group>
-            <el-button type="primary" @click="showModel" size="medium" round
-              >展开模式</el-button
-            >
-            <el-button type="primary" @click="showModel2" size="medium" round
-              >透视模式</el-button>
-          </el-button-group>
-          <!-- <button class="btn" ></button>
-          <button class="btn" ></button> -->
+          <btn-switch @expland="handleExpland"></btn-switch>
         </div>
       </div>
-    </dv-full-screen-container>
+    </div>
   </div>
 </template>
 
@@ -125,7 +116,7 @@ import PanelBar from "./PanelBar.vue";
 import PanelFiber from "./PanelFiber.vue";
 import PanelMachine from "./PanelMachine.vue";
 import PanelContent from "./components/PanelContent.vue";
-import BtnSwitch from "./components/BtnSwitch"
+import BtnSwitch from "./components/BtnSwitch";
 
 export default {
   data() {
@@ -184,7 +175,7 @@ export default {
     PanelText,
     PanelMachine,
     PanelContent,
-    BtnSwitch
+    BtnSwitch,
   },
   mounted() {
     this.timeFn();
@@ -203,11 +194,12 @@ export default {
         this.loading = false;
       }, 500);
     },
-    showModel() {
-      this.$refs.transformer.playAnimation();
-    },
-    showModel2() {
-      this.$refs.transformer.playAnimation2();
+    handleExpland(e) {
+      if (e) {
+        this.$refs.transformer.playAnimation();
+      } else {
+        this.$refs.transformer.playAnimation2();
+      }
     },
     handleClickTabs(e) {
       this.tabsActive = e;

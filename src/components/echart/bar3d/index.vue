@@ -2,7 +2,7 @@
   <div>
     <Echart
       :options="options"
-      id="bar3d"
+      id="home_bar3d"
       height="100%"
       width="100%"
     ></Echart>

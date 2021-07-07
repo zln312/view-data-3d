@@ -2,18 +2,30 @@
  * @Author: Zhao.Li.Nai
  * @Date: 2021-07-05 14:59:59
  * @LastEditors: Zhao.Li.Nai
- * @LastEditTime: 2021-07-05 15:07:14
+ * @LastEditTime: 2021-07-07 15:56:29
 -->
 <template>
   <div class="switch">
-    <input type="checkbox" name="toggle" />
+    <input type="checkbox" name="toggle" @input="handleInput"/>
     <label for="toggle"><i></i></label>
     <span></span>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            check: false
+        }
+    },
+    methods:{
+        handleInput() {
+            this.check = !this.check
+            this.$emit('expland',this.check)
+        }
+    }
+};
 </script>
 
 <style>
@@ -37,7 +49,6 @@ export default {};
   width: 180px;
   height: 55px;
   position: relative;
-  margin: 100px auto;
 }
 
 .switch label {

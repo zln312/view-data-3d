@@ -1,3 +1,4 @@
+
 // 混入代码 resize-mixins.js
 import { debounce } from '@/utils';
 const resizeChartMethod = '$__resizeChartMethod';
@@ -14,6 +15,7 @@ export default {
   },
   activated() {
     // 防止 keep-alive 之后图表变形
+    console.log('activated....');
     if (this.chart) {
       this.chart.resize()
     }
@@ -24,7 +26,10 @@ export default {
   methods: {
     // 防抖函数来控制 resize 的频率
     [resizeChartMethod]: debounce(function() {
+        console.log('resize...');
       if (this.chart) {
+        console.log('IF resize...',this.chart);
+        location.reload()
         this.chart.resize();
       }
     }, 300),

@@ -2,13 +2,13 @@
  * @Author: Zhao.Li.Nai
  * @Date: 2021-06-27 22:09:32
  * @LastEditors: Zhao.Li.Nai
- * @LastEditTime: 2021-06-28 15:55:50
+ * @LastEditTime: 2021-07-07 15:08:59
 -->
 <template>
   <div>
     <Echart
       :options="options"
-      id="funnel"
+      id="home_funnel"
       height="100%"
       width="100%"
     ></Echart>

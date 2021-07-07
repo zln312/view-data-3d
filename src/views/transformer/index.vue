@@ -2,7 +2,7 @@
  * @Author: Zhao.Li.Nai
  * @Date: 2021-06-16 22:25:30
  * @LastEditors: Zhao.Li.Nai
- * @LastEditTime: 2021-06-25 15:43:09
+ * @LastEditTime: 2021-07-07 16:00:52
 -->
 <template>
   <div>
@@ -151,11 +151,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #t {
   width: 100%;
   height: 100%;
   display: block;
   position: absolute;
+}
+.dg {
+    display: none !important;
 }
 </style>

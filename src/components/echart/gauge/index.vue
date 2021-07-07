@@ -2,13 +2,13 @@
  * @Author: Zhao.Li.Nai
  * @Date: 2021-06-28 14:31:34
  * @LastEditors: Zhao.Li.Nai
- * @LastEditTime: 2021-06-28 15:47:28
+ * @LastEditTime: 2021-07-07 15:41:49
 -->
 <template>
-  <div>
+  <div id="home-gauge">
     <Echart
       :options="options"
-      id="gauge"
+      id="e-gauge"
       height="100%"
       width="100%"
     ></Echart>
